@@ -1,11 +1,16 @@
 # Website
 
-Personal website.
+Personal website built with React + Vite.
 
-## Getting Started
+## Development
 
-Clone the repository and open `index.html` in your browser, or run a local dev server.
+```bash
+npm install
+npm run dev
+```
 
-## License
+## Build
 
-All rights reserved.
+```bash
+npm run build
+```
