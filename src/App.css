@@ -246,6 +246,62 @@
   max-width: none;
 }
 
+/* Experience */
+.experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.experience-item {
+  background: #f5f5f7;
+  border-radius: 18px;
+  padding: 28px 32px;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.experience-item:hover {
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  gap: 16px;
+}
+
+.experience-header h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 4px;
+}
+
+.experience-company {
+  font-size: 0.9rem;
+  color: #0071e3;
+  font-weight: 500;
+  max-width: none;
+}
+
+.experience-date {
+  font-size: 0.85rem;
+  color: #6e6e73;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.experience-desc {
+  font-size: 0.95rem;
+  color: #6e6e73;
+  line-height: 1.65;
+  max-width: none;
+}
+
 /* Contact */
 .contact-blurb {
   margin-top: 32px;

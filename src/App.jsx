@@ -15,6 +15,7 @@ function App() {
         </button>
         <div className="nav-links">
           <button onClick={() => scrollTo('projects')}>Projects</button>
+          <button onClick={() => scrollTo('experience')}>Experience</button>
           <button onClick={() => scrollTo('about')}>About Me</button>
         </div>
       </nav>
@@ -55,6 +56,45 @@ function App() {
               <div className="card fade-in" style={{ animationDelay: '0.2s' }}>
                 <h3>Project Three</h3>
                 <p>A brief description of what this project does and the technologies used to build it.</p>
+              </div>
+            </div>
+          </div>
+          <button className="scroll-hint section-hint" onClick={() => scrollTo('experience')} aria-label="Scroll to Experience">↓</button>
+        </section>
+
+        <section id="experience" className="section">
+          <div className="section-inner">
+            <h2 className="fade-in">Experience</h2>
+            <div className="experience-list">
+              <div className="experience-item fade-in">
+                <div className="experience-header">
+                  <div>
+                    <h3>Job Title</h3>
+                    <p className="experience-company">Company Name</p>
+                  </div>
+                  <span className="experience-date">Jan 2024 – Present</span>
+                </div>
+                <p className="experience-desc">Brief description of your role and what you worked on here.</p>
+              </div>
+              <div className="experience-item fade-in">
+                <div className="experience-header">
+                  <div>
+                    <h3>Job Title</h3>
+                    <p className="experience-company">Company Name</p>
+                  </div>
+                  <span className="experience-date">Jun 2023 – Dec 2023</span>
+                </div>
+                <p className="experience-desc">Brief description of your role and what you worked on here.</p>
+              </div>
+              <div className="experience-item fade-in">
+                <div className="experience-header">
+                  <div>
+                    <h3>Job Title</h3>
+                    <p className="experience-company">Company Name</p>
+                  </div>
+                  <span className="experience-date">Jan 2023 – May 2023</span>
+                </div>
+                <p className="experience-desc">Brief description of your role and what you worked on here.</p>
               </div>
             </div>
           </div>
