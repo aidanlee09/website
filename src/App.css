@@ -16,10 +16,17 @@
 }
 
 .nav-brand {
+  background: none;
+  border: none;
+  color: rgba(245, 245, 247, 0.8);
+  cursor: pointer;
+  display: flex;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.nav-brand:hover {
   color: #f5f5f7;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
 }
 
 .nav-links {
