@@ -233,6 +233,10 @@
 }
 
 /* Contact */
+.contact-blurb {
+  margin-top: 32px;
+}
+
 .contact-link {
   display: inline-block;
   margin-top: 28px;

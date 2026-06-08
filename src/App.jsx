@@ -30,7 +30,6 @@ function App() {
         <div className="nav-links">
           <button onClick={() => scrollTo('about')}>About Me</button>
           <button onClick={() => scrollTo('projects')}>Projects</button>
-          <button onClick={() => scrollTo('contact')}>Contact</button>
         </div>
       </nav>
 
@@ -63,6 +62,10 @@ function App() {
               experiences. I enjoy working across the full stack and crafting
               interfaces that feel natural and intuitive.
             </p>
+            <p className="contact-blurb">Interested in working together or just want to say hi?</p>
+            <a href="mailto:aidantzlee@gmail.com" className="contact-link">
+              aidantzlee@gmail.com
+            </a>
           </div>
         </section>
 
@@ -86,15 +89,6 @@ function App() {
           </div>
         </section>
 
-        <section id="contact" className="section">
-          <div className="section-inner fade-in">
-            <h2>Contact</h2>
-            <p>Interested in working together or just want to say hi? Reach out below.</p>
-            <a href="mailto:hello@aidantlee.com" className="contact-link">
-              hello@aidantlee.com
-            </a>
-          </div>
-        </section>
       </div>
     </>
   )
