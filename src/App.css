@@ -146,6 +146,13 @@
   50% { transform: translateY(8px); }
 }
 
+.section-hint {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* Main content slides over the sticky hero */
 .main-content {
   position: relative;
@@ -155,6 +162,7 @@
 
 /* Sections */
 .section {
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
