@@ -1,20 +1,6 @@
-import { useEffect } from 'react'
 import './App.css'
 
 function App() {
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) entry.target.classList.add('visible')
-        })
-      },
-      { threshold: 0, rootMargin: '0px 0px -80px 0px' }
-    )
-    document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el))
-    return () => observer.disconnect()
-  }, [])
-
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
@@ -50,7 +36,7 @@ function App() {
             </a>
           </div>
         </div>
-        <button className="scroll-hint" onClick={() => scrollTo('about')} aria-label="Scroll to About Me">↓</button>
+        <button className="scroll-hint" onClick={() => scrollTo('projects')} aria-label="Scroll down">↓</button>
       </section>
 
       <div className="main-content">
@@ -62,11 +48,11 @@ function App() {
                 <h3>Project One</h3>
                 <p>A brief description of what this project does and the technologies used to build it.</p>
               </div>
-              <div className="card fade-in">
+              <div className="card fade-in" style={{ animationDelay: '0.1s' }}>
                 <h3>Project Two</h3>
                 <p>A brief description of what this project does and the technologies used to build it.</p>
               </div>
-              <div className="card fade-in">
+              <div className="card fade-in" style={{ animationDelay: '0.2s' }}>
                 <h3>Project Three</h3>
                 <p>A brief description of what this project does and the technologies used to build it.</p>
               </div>
@@ -88,7 +74,6 @@ function App() {
             </a>
           </div>
         </section>
-
       </div>
     </>
   )

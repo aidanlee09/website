@@ -184,17 +184,24 @@
   max-width: 600px;
 }
 
-/* Fade-in on scroll */
+/* Fade-in: visible by default, animated in supporting browsers */
 .fade-in {
-  opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  opacity: 1;
+  transform: none;
 }
 
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
+@supports (animation-timeline: view()) {
+  .fade-in {
+    animation: reveal ease both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 35%;
+    animation-duration: 1ms;
+  }
+}
+
+@keyframes reveal {
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: none; }
 }
 
 /* Project cards */
@@ -209,18 +216,13 @@
   background: #f5f5f7;
   border-radius: 18px;
   padding: 32px 28px;
-  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
-    transform 0.9s cubic-bezier(0.16, 1, 0.3, 1),
-    box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .card:hover {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  transform: translateY(-4px) !important;
+  transform: translateY(-4px);
 }
-
-.cards .card:nth-child(2) { transition-delay: 0.1s; }
-.cards .card:nth-child(3) { transition-delay: 0.2s; }
 
 .card h3 {
   font-size: 1.1rem;
