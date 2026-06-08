@@ -1,6 +1,25 @@
+import { useEffect } from 'react'
 import './App.css'
 
 function App() {
+  useEffect(() => {
+    const items = document.querySelectorAll('.experience-item')
+    if (!items.length) return
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible')
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      { threshold: 0.15 }
+    )
+    items.forEach((el) => observer.observe(el))
+    return () => observer.disconnect()
+  }, [])
+
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
@@ -66,7 +85,7 @@ function App() {
           <div className="section-inner">
             <h2 className="fade-in">Experience</h2>
             <div className="experience-list">
-              <div className="experience-item fade-in">
+              <div className="experience-item">
                 <img className="experience-logo" src="/logos/capitalone.svg" alt="Capital One" />
                 <div className="experience-body">
                   <div className="experience-header">
@@ -79,7 +98,7 @@ function App() {
                   <p className="experience-desc">Brief description of your role and what you worked on here.</p>
                 </div>
               </div>
-              <div className="experience-item fade-in">
+              <div className="experience-item">
                 <img className="experience-logo" src="/logos/barclays.svg" alt="Barclays" />
                 <div className="experience-body">
                   <div className="experience-header">
@@ -92,7 +111,7 @@ function App() {
                   <p className="experience-desc">Brief description of your role and what you worked on here.</p>
                 </div>
               </div>
-              <div className="experience-item fade-in">
+              <div className="experience-item">
                 <img className="experience-logo" src="https://logo.clearbit.com/nobiastherapeutics.com" alt="Nobias Therapeutics" />
                 <div className="experience-body">
                   <div className="experience-header">
@@ -105,7 +124,7 @@ function App() {
                   <p className="experience-desc">Brief description of your role and what you worked on here.</p>
                 </div>
               </div>
-              <div className="experience-item fade-in">
+              <div className="experience-item">
                 <img className="experience-logo" src="https://logo.clearbit.com/nobiastherapeutics.com" alt="Nobias Therapeutics" />
                 <div className="experience-body">
                   <div className="experience-header">
@@ -129,7 +148,7 @@ function App() {
             <p>
               I'm a developer passionate about building clean, thoughtful digital
               experiences. I enjoy working across the full stack and crafting
-              interfaces that feel natural and intuitive.
+              interfaces that feel natural and intuitive. Check out my youtube channel!
             </p>
             <p className="contact-blurb">Interested in working together or just want to say hi?</p>
             <a href="mailto:aidantzlee@gmail.com" className="contact-link">
