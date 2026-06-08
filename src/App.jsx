@@ -28,8 +28,8 @@ function App() {
           </svg>
         </button>
         <div className="nav-links">
-          <button onClick={() => scrollTo('about')}>About Me</button>
           <button onClick={() => scrollTo('projects')}>Projects</button>
+          <button onClick={() => scrollTo('about')}>About Me</button>
         </div>
       </nav>
 
@@ -54,21 +54,6 @@ function App() {
       </section>
 
       <div className="main-content">
-        <section id="about" className="section">
-          <div className="section-inner fade-in">
-            <h2>About Me</h2>
-            <p>
-              I'm a developer passionate about building clean, thoughtful digital
-              experiences. I enjoy working across the full stack and crafting
-              interfaces that feel natural and intuitive.
-            </p>
-            <p className="contact-blurb">Interested in working together or just want to say hi?</p>
-            <a href="mailto:aidantzlee@gmail.com" className="contact-link">
-              aidantzlee@gmail.com
-            </a>
-          </div>
-        </section>
-
         <section id="projects" className="section">
           <div className="section-inner">
             <h2 className="fade-in">Projects</h2>
@@ -86,6 +71,21 @@ function App() {
                 <p>A brief description of what this project does and the technologies used to build it.</p>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section id="about" className="section">
+          <div className="section-inner fade-in">
+            <h2>About Me</h2>
+            <p>
+              I'm a developer passionate about building clean, thoughtful digital
+              experiences. I enjoy working across the full stack and crafting
+              interfaces that feel natural and intuitive.
+            </p>
+            <p className="contact-blurb">Interested in working together or just want to say hi?</p>
+            <a href="mailto:aidantzlee@gmail.com" className="contact-link">
+              aidantzlee@gmail.com
+            </a>
           </div>
         </section>
 

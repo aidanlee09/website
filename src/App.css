@@ -155,7 +155,10 @@
 
 /* Sections */
 .section {
-  padding: 120px 40px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 100px 40px;
   scroll-margin-top: 52px;
   border-top: 1px solid #d2d2d7;
 }
@@ -163,6 +166,7 @@
 .section-inner {
   max-width: 860px;
   margin: 0 auto;
+  width: 100%;
 }
 
 .section h2 {
