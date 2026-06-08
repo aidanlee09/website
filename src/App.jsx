@@ -116,7 +116,7 @@ function App() {
                 <div className="experience-body">
                   <div className="experience-header">
                     <div>
-                      <h3>Machine Learning Intern</h3>
+                      <h3>Machine Learning Engineering Intern</h3>
                       <p className="experience-company">Nobias Therapeutics</p>
                     </div>
                     <span className="experience-date">Summer 2024</span>
