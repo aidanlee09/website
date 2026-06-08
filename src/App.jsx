@@ -9,7 +9,7 @@ function App() {
           if (entry.isIntersecting) entry.target.classList.add('visible')
         })
       },
-      { threshold: 0.1 }
+      { threshold: 0, rootMargin: '0px 0px -80px 0px' }
     )
     document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el))
     return () => observer.disconnect()
