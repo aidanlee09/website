@@ -74,7 +74,7 @@ function App() {
                       <h3>Software Engineering Intern</h3>
                       <p className="experience-company">Capital One</p>
                     </div>
-                    <span className="experience-date">Summer 2024</span>
+                    <span className="experience-date">Summer 2026</span>
                   </div>
                   <p className="experience-desc">Brief description of your role and what you worked on here.</p>
                 </div>
@@ -87,7 +87,7 @@ function App() {
                       <h3>Software Engineering Intern</h3>
                       <p className="experience-company">Barclays</p>
                     </div>
-                    <span className="experience-date">Summer 2023</span>
+                    <span className="experience-date">Summer 2025</span>
                   </div>
                   <p className="experience-desc">Brief description of your role and what you worked on here.</p>
                 </div>
@@ -100,7 +100,7 @@ function App() {
                       <h3>Machine Learning Intern</h3>
                       <p className="experience-company">Nobias Therapeutics</p>
                     </div>
-                    <span className="experience-date">Spring 2023</span>
+                    <span className="experience-date">Summer 2024</span>
                   </div>
                   <p className="experience-desc">Brief description of your role and what you worked on here.</p>
                 </div>
@@ -113,7 +113,7 @@ function App() {
                       <h3>Software Engineering Intern</h3>
                       <p className="experience-company">Nobias Therapeutics</p>
                     </div>
-                    <span className="experience-date">Fall 2022</span>
+                    <span className="experience-date">Summer 2023</span>
                   </div>
                   <p className="experience-desc">Brief description of your role and what you worked on here.</p>
                 </div>
