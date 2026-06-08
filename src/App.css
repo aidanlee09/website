@@ -274,13 +274,14 @@
 }
 
 .experience-logo {
-  width: 48px;
-  height: 48px;
-  border-radius: 10px;
+  width: 80px;
+  height: 40px;
+  border-radius: 8px;
   object-fit: contain;
   background: #fff;
-  padding: 4px;
+  padding: 6px 8px;
   flex-shrink: 0;
+  align-self: center;
 }
 
 .experience-body {

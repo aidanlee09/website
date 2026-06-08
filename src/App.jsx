@@ -67,7 +67,7 @@ function App() {
             <h2 className="fade-in">Experience</h2>
             <div className="experience-list">
               <div className="experience-item fade-in">
-                <img className="experience-logo" src="https://logo.clearbit.com/capitalone.com" alt="Capital One" />
+                <img className="experience-logo" src="/logos/capitalone.svg" alt="Capital One" />
                 <div className="experience-body">
                   <div className="experience-header">
                     <div>
@@ -80,7 +80,7 @@ function App() {
                 </div>
               </div>
               <div className="experience-item fade-in">
-                <img className="experience-logo" src="https://logo.clearbit.com/barclays.com" alt="Barclays" />
+                <img className="experience-logo" src="/logos/barclays.svg" alt="Barclays" />
                 <div className="experience-body">
                   <div className="experience-header">
                     <div>
