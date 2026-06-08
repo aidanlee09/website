@@ -112,7 +112,7 @@ function App() {
                 </div>
               </div>
               <div className="experience-item">
-                <img className="experience-logo" src="https://logo.clearbit.com/nobiastherapeutics.com" alt="Nobias Therapeutics" />
+                <img className="experience-logo experience-logo--dark" src="/logos/nobias.png" alt="Nobias Therapeutics" />
                 <div className="experience-body">
                   <div className="experience-header">
                     <div>
@@ -125,7 +125,7 @@ function App() {
                 </div>
               </div>
               <div className="experience-item">
-                <img className="experience-logo" src="https://logo.clearbit.com/nobiastherapeutics.com" alt="Nobias Therapeutics" />
+                <img className="experience-logo experience-logo--dark" src="/logos/nobias.png" alt="Nobias Therapeutics" />
                 <div className="experience-body">
                   <div className="experience-header">
                     <div>

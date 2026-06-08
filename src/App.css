@@ -286,6 +286,10 @@
   align-self: center;
 }
 
+.experience-logo--dark {
+  background: #0e1c2f;
+}
+
 .experience-body {
   flex: 1;
   min-width: 0;
