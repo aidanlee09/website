@@ -51,7 +51,7 @@ function App() {
             </a>
           </div>
         </div>
-        <div className="scroll-hint">↓</div>
+        <button className="scroll-hint" onClick={() => scrollTo('about')} aria-label="Scroll to About Me">↓</button>
       </section>
 
       <div className="main-content">
