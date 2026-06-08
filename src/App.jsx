@@ -67,34 +67,56 @@ function App() {
             <h2 className="fade-in">Experience</h2>
             <div className="experience-list">
               <div className="experience-item fade-in">
-                <div className="experience-header">
-                  <div>
-                    <h3>Job Title</h3>
-                    <p className="experience-company">Company Name</p>
+                <img className="experience-logo" src="https://logo.clearbit.com/capitalone.com" alt="Capital One" />
+                <div className="experience-body">
+                  <div className="experience-header">
+                    <div>
+                      <h3>Software Engineering Intern</h3>
+                      <p className="experience-company">Capital One</p>
+                    </div>
+                    <span className="experience-date">Summer 2024</span>
                   </div>
-                  <span className="experience-date">Jan 2024 – Present</span>
+                  <p className="experience-desc">Brief description of your role and what you worked on here.</p>
                 </div>
-                <p className="experience-desc">Brief description of your role and what you worked on here.</p>
               </div>
               <div className="experience-item fade-in">
-                <div className="experience-header">
-                  <div>
-                    <h3>Job Title</h3>
-                    <p className="experience-company">Company Name</p>
+                <img className="experience-logo" src="https://logo.clearbit.com/barclays.com" alt="Barclays" />
+                <div className="experience-body">
+                  <div className="experience-header">
+                    <div>
+                      <h3>Software Engineering Intern</h3>
+                      <p className="experience-company">Barclays</p>
+                    </div>
+                    <span className="experience-date">Summer 2023</span>
                   </div>
-                  <span className="experience-date">Jun 2023 – Dec 2023</span>
+                  <p className="experience-desc">Brief description of your role and what you worked on here.</p>
                 </div>
-                <p className="experience-desc">Brief description of your role and what you worked on here.</p>
               </div>
               <div className="experience-item fade-in">
-                <div className="experience-header">
-                  <div>
-                    <h3>Job Title</h3>
-                    <p className="experience-company">Company Name</p>
+                <img className="experience-logo" src="https://logo.clearbit.com/nobiastherapeutics.com" alt="Nobias Therapeutics" />
+                <div className="experience-body">
+                  <div className="experience-header">
+                    <div>
+                      <h3>Machine Learning Intern</h3>
+                      <p className="experience-company">Nobias Therapeutics</p>
+                    </div>
+                    <span className="experience-date">Spring 2023</span>
                   </div>
-                  <span className="experience-date">Jan 2023 – May 2023</span>
+                  <p className="experience-desc">Brief description of your role and what you worked on here.</p>
                 </div>
-                <p className="experience-desc">Brief description of your role and what you worked on here.</p>
+              </div>
+              <div className="experience-item fade-in">
+                <img className="experience-logo" src="https://logo.clearbit.com/nobiastherapeutics.com" alt="Nobias Therapeutics" />
+                <div className="experience-body">
+                  <div className="experience-header">
+                    <div>
+                      <h3>Software Engineering Intern</h3>
+                      <p className="experience-company">Nobias Therapeutics</p>
+                    </div>
+                    <span className="experience-date">Fall 2022</span>
+                  </div>
+                  <p className="experience-desc">Brief description of your role and what you worked on here.</p>
+                </div>
               </div>
             </div>
           </div>

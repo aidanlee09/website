@@ -258,12 +258,30 @@
   background: #f5f5f7;
   border-radius: 18px;
   padding: 28px 32px;
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .experience-item:hover {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   transform: translateY(-2px);
+}
+
+.experience-logo {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+  object-fit: contain;
+  background: #fff;
+  padding: 4px;
+  flex-shrink: 0;
+}
+
+.experience-body {
+  flex: 1;
+  min-width: 0;
 }
 
 .experience-header {
