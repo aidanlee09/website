@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
   useEffect(() => {
-    const items = document.querySelectorAll('.experience-item')
+    const items = document.querySelectorAll('.experience-item, .card')
     if (!items.length) return
     const observer = new IntersectionObserver(
       (entries) => {
@@ -65,15 +65,15 @@ function App() {
           <div className="section-inner">
             <h2 className="fade-in">Projects</h2>
             <div className="cards">
-              <div className="card fade-in">
+              <div className="card">
                 <h3>Project One</h3>
                 <p>A brief description of what this project does and the technologies used to build it.</p>
               </div>
-              <div className="card fade-in" style={{ animationDelay: '0.1s' }}>
+              <div className="card">
                 <h3>Project Two</h3>
                 <p>A brief description of what this project does and the technologies used to build it.</p>
               </div>
-              <div className="card fade-in" style={{ animationDelay: '0.2s' }}>
+              <div className="card">
                 <h3>Project Three</h3>
                 <p>A brief description of what this project does and the technologies used to build it.</p>
               </div>
