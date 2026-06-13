@@ -43,7 +43,7 @@ function App() {
       <section className="hero">
         <div className="hero-content">
           <h1>Aidan Lee</h1>
-          <p className="hero-sub">Developer · Designer · Builder</p>
+          <p className="hero-sub">Designer · Creator · Innovator</p>
           <div className="hero-links">
             <a href="https://www.linkedin.com/in/aidantlee/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -98,7 +98,7 @@ function App() {
                   </div>
                   <ul className="experience-desc">
                     <li>Developed functional testing coverage AI tools for internal Java, Python, Node.js, and Go repositories.</li>
-                    <li>Scaled tools across multiple lines of business on a serverless architecture using AWS Lambda and SAM.</li>
+                    <li>Scaled tools across multiple lines of business with serverless architecture via AWS Lambda and SAM.</li>
                   </ul>
                 </div>
               </div>
@@ -165,7 +165,7 @@ function App() {
             </p>
             <p className="contact-blurb">Interested in working together or just want to say hi?</p>
             <a href="mailto:aidantzlee@gmail.com" className="contact-link">
-              aidantzlee@gmail.com
+              Contact: aidantzlee@gmail.com
             </a>
           </div>
         </section>
