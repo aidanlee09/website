@@ -178,7 +178,7 @@ function App() {
               <p className="contact-link">LinkedIn: linkedin.com/in/aidantlee</p>
             </div>
             <div className="about-photo">
-              <img src="/photo.jpg" alt="Aidan Lee" />
+              <img src="/logos/aidanlee.png" alt="Aidan Lee" />
             </div>
           </div>
         </section>
