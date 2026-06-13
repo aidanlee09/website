@@ -332,10 +332,16 @@
 }
 
 .experience-desc {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: #6e6e73;
   line-height: 1.65;
   max-width: none;
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.experience-desc li {
+  margin-bottom: 0.2rem;
 }
 
 /* Contact */

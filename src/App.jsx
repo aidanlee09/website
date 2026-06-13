@@ -92,11 +92,14 @@ function App() {
                   <div className="experience-header">
                     <div>
                       <h3>Software Engineering Intern</h3>
-                      <p className="experience-company">Capital One</p>
+                      <p className="experience-company">Capital One · Enterprise Platform Technology</p>
                     </div>
                     <span className="experience-date">Summer 2026</span>
                   </div>
-                  <p className="experience-desc">Brief description of your role and what you worked on here.</p>
+                  <ul className="experience-desc">
+                    <li>Developed functional testing coverage AI tools for internal Java, Python, Node.js, and Go repositories.</li>
+                    <li>Scaled tools across multiple lines of business on a serverless architecture using AWS Lambda and SAM.</li>
+                  </ul>
                 </div>
               </div>
               <div className="experience-item">
@@ -105,11 +108,14 @@ function App() {
                   <div className="experience-header">
                     <div>
                       <h3>Software Engineering Intern</h3>
-                      <p className="experience-company">Barclays</p>
+                      <p className="experience-company">Barclays · Credit Trading Technology</p>
                     </div>
                     <span className="experience-date">Summer 2025</span>
                   </div>
-                  <p className="experience-desc">Brief description of your role and what you worked on here.</p>
+                  <ul className="experience-desc">
+                    <li>Built API pipeline to ingest vendor insurance holdings data to support client behavior models.</li>
+                    <li>Worked alongside credit traders to enhance and resolve features on internal trading platform.</li>
+                  </ul>
                 </div>
               </div>
               <div className="experience-item">
@@ -122,7 +128,10 @@ function App() {
                     </div>
                     <span className="experience-date">Summer 2024</span>
                   </div>
-                  <p className="experience-desc">Brief description of your role and what you worked on here.</p>
+                  <ul className="experience-desc">
+                    <li>Engineered a 7 billion parameter genomic foundation model from the ground up.</li>
+                    <li>Trained and fine-tuned model on clinical biosamples from Children's Hospital of Philadelphia.</li>
+                  </ul>
                 </div>
               </div>
               <div className="experience-item">
@@ -135,7 +144,10 @@ function App() {
                     </div>
                     <span className="experience-date">Summer 2023</span>
                   </div>
-                  <p className="experience-desc">Brief description of your role and what you worked on here.</p>
+                  <ul className="experience-desc">
+                    <li>Created algorithmic prediction tools to model 45+ G-proteins and expedite clinical trial analysis.</li>
+                    <li>Discovered unclassified G-proteins by integrating topological data analysis with algorithmic prediction.</li>
+                  </ul>
                 </div>
               </div>
             </div>
