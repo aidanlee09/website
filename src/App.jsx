@@ -3,9 +3,9 @@ import './App.css'
 
 function App() {
   useEffect(() => {
-    const items = document.querySelectorAll('.experience-item')
-    if (!items.length) return
-    const observer = new IntersectionObserver(
+    // Experience items: each card observed individually
+    const expItems = document.querySelectorAll('.experience-item')
+    const expObserver = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
@@ -15,10 +15,13 @@ function App() {
           }
         })
       },
-      { threshold: 0.05 }
+      { threshold: 0.1 }
     )
-    items.forEach((el) => observer.observe(el))
-    return () => observer.disconnect()
+    expItems.forEach((el) => expObserver.observe(el))
+
+    return () => {
+      expObserver.disconnect()
+    }
   }, [])
 
   const scrollTo = (id) => {
