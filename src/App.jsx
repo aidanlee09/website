@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
   useEffect(() => {
-    const items = document.querySelectorAll('.experience-item, .card')
+    const items = document.querySelectorAll('.experience-item')
     if (!items.length) return
     const observer = new IntersectionObserver(
       (entries) => {
@@ -15,7 +15,7 @@ function App() {
           }
         })
       },
-      { threshold: 0.15 }
+      { threshold: 0.05 }
     )
     items.forEach((el) => observer.observe(el))
     return () => observer.disconnect()
@@ -65,17 +65,21 @@ function App() {
           <div className="section-inner">
             <h2 className="fade-in">Projects</h2>
             <div className="cards">
-              <div className="card">
-                <h3>Project One</h3>
-                <p>A brief description of what this project does and the technologies used to build it.</p>
+              <div className="card card--img card--link" onClick={() => window.open('https://clyvara.org', '_blank', 'noreferrer')}>
+                <img src="/projects/clyvara.png" alt="Clyvara" style={{objectPosition: 'center top'}} />
+                <p className="card-caption">Clyvara · AI Ed-Tech Platform</p>
               </div>
-              <div className="card">
-                <h3>Project Two</h3>
-                <p>A brief description of what this project does and the technologies used to build it.</p>
+              <div className="card card--img card--link" onClick={() => window.open('https://devpost.com/software/hachi', '_blank', 'noreferrer')}>
+                <img src="/projects/visionmate.png" alt="VisionMate" style={{objectPosition: 'center bottom'}} />
+                <p className="card-caption">VisionMate</p>
               </div>
-              <div className="card">
-                <h3>Project Three</h3>
-                <p>A brief description of what this project does and the technologies used to build it.</p>
+              <div className="card card--img card--link" onClick={() => window.open('https://bhm2025.columbiaspectator.com/', '_blank', 'noreferrer')}>
+                <img src="/projects/bhm2025.png" alt="Black History Month 2025 cover" style={{objectPosition: 'center top'}} />
+                <p className="card-caption">Columbia Spectator Special Edition</p>
+              </div>
+              <div className="card card--img card--link" onClick={() => window.open('https://nsop2025.columbiaspectator.com/', '_blank', 'noreferrer')}>
+                <img src="/projects/nsop2025.png" alt="NSOP 2025 cover" style={{objectPosition: 'center 30%'}} />
+                <p className="card-caption">Columbia Spectator Special Edition</p>
               </div>
             </div>
           </div>
