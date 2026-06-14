@@ -54,6 +54,7 @@
   position: sticky;
   top: 0;
   height: 100vh;
+  height: 100dvh;
   z-index: 0;
   background: #000;
   display: flex;
@@ -164,6 +165,7 @@
 .section {
   position: relative;
   min-height: calc(100vh - 52px);
+  min-height: calc(100dvh - 52px);
   display: flex;
   align-items: center;
   padding: 80px 40px 140px;
@@ -406,7 +408,106 @@
   opacity: 1;
 }
 
-@media (max-width: 600px) {
-  .navbar { padding: 0 20px; }
-  .section { padding: 80px 24px; }
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  /* Use dynamic viewport height to account for mobile browser chrome */
+  .hero {
+    height: 100dvh;
+  }
+
+  .section {
+    min-height: calc(100dvh - 52px);
+    padding: 72px 24px 100px;
+    align-items: flex-start;
+  }
+
+  .section-inner {
+    width: 100%;
+  }
+
+  /* Section p: allow full width on mobile */
+  .section p {
+    max-width: 100%;
+  }
+
+  /* Project cards: single column */
+  .cards {
+    grid-template-columns: 1fr;
+    margin-top: 28px;
+  }
+
+  /* Experience */
+  .experience-list {
+    margin-top: 28px;
+  }
+
+  .experience-item {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px 18px;
+  }
+
+  .experience-logo {
+    align-self: flex-start;
+    width: 44px;
+    height: 44px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    gap: 2px;
+    margin-bottom: 8px;
+  }
+
+  .experience-date {
+    white-space: normal;
+  }
+
+  .experience-company {
+    font-size: 0.85rem;
+  }
+
+  /* About: text first, photo below */
+  .about-inner {
+    flex-direction: column;
+    gap: 32px;
+    max-width: 100%;
+  }
+
+  .about-photo {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  /* Contact */
+  .contact-link {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra-small screens (iPhone SE, Galaxy A series, etc.) */
+@media (max-width: 390px) {
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links button {
+    font-size: 0.78rem;
+  }
+
+  .section {
+    padding: 64px 18px 90px;
+  }
+
+  .experience-item {
+    padding: 18px 14px;
+  }
 }
