@@ -78,7 +78,7 @@ export default function Experience({ scrollTo }) {
               <div className="experience-header">
                 <div>
                   <h3>Software Engineering Intern</h3>
-                  <p className="experience-company">Nobias Therapeutics</p>
+                  <p className="experience-company">Nobias Therapeutics (Series A)</p>
                 </div>
                 <span className="experience-date">Summer 2023</span>
               </div>
