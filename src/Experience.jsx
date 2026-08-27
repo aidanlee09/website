@@ -35,8 +35,8 @@ export default function Experience({ scrollTo }) {
                 <span className="experience-date">Summer 2026</span>
               </div>
               <ul className="experience-desc">
-                <li>Developed functional testing coverage AI tools for internal Java, Python, Node.js, and Go repositories.</li>
-                <li>Scaled tools across multiple lines of business with serverless architecture via AWS Lambda and SAM.</li>
+                <li>Built a Claude skill to replace and automate functional test coverage in the CI/CD pipeline and fill test gaps.</li>
+                <li>Added containerized and serverless repository support across 4 environments using AWS Lambda and SAM.</li>
               </ul>
             </div>
           </div>
