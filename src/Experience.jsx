@@ -46,7 +46,7 @@ export default function Experience({ scrollTo }) {
                   <h3>Software Engineering Intern</h3>
                   <p className="experience-company">Capital One · Enterprise Platform Technology</p>
                 </div>
-                <span className="experience-date">Summer 2026</span>
+                <span className="experience-date">June 2026 - August 2026</span>
               </div>
               <ul className="experience-desc">
                 <li>Built a Claude skill to replace and automate functional test coverage in the CI/CD pipeline and fill test gaps.</li>
@@ -62,7 +62,7 @@ export default function Experience({ scrollTo }) {
                   <h3>Software Engineering Intern</h3>
                   <p className="experience-company">Barclays · Credit Trading Technology</p>
                 </div>
-                <span className="experience-date">Summer 2025</span>
+                <span className="experience-date">June 2025 - August 2025</span>
               </div>
               <ul className="experience-desc">
                 <li>Built API pipeline to ingest vendor insurance holdings data to support client behavior models.</li>
@@ -78,7 +78,7 @@ export default function Experience({ scrollTo }) {
                   <h3>Machine Learning Engineering Intern</h3>
                   <p className="experience-company">Nobias Therapeutics (Series A)</p>
                 </div>
-                <span className="experience-date">Summer 2024</span>
+                <span className="experience-date">May 2024 - August 2024</span>
               </div>
               <ul className="experience-desc">
                 <li>Engineered a 7 billion parameter genomic foundation model from the ground up.</li>
@@ -94,7 +94,7 @@ export default function Experience({ scrollTo }) {
                   <h3>Software Engineering Intern</h3>
                   <p className="experience-company">Nobias Therapeutics (Series A)</p>
                 </div>
-                <span className="experience-date">Summer 2023</span>
+                <span className="experience-date">May 2023 - August 2023</span>
               </div>
               <ul className="experience-desc">
                 <li>Created algorithmic prediction tools to model 45+ G-proteins and expedite clinical trial analysis.</li>
