@@ -30,7 +30,7 @@ export default function Experience({ scrollTo }) {
               <div className="experience-header">
                 <div>
                   <h3>AI Builder (Forward Deployed Engineer)</h3>
-                  <p className="experience-company">Salesforce</p>
+                  <p className="experience-company">Salesforce · Regulated Industries</p>
                 </div>
                 <span className="experience-date">Sep 2026 - Present</span>
               </div>
