@@ -25,6 +25,20 @@ export default function Experience({ scrollTo }) {
         <h2 className="fade-in">Experience</h2>
         <div className="experience-list">
           <div className="experience-item">
+            <img className="experience-logo" src="/logos/salesforce.svg" alt="Salesforce" />
+            <div className="experience-body">
+              <div className="experience-header">
+                <div>
+                  <h3>AI Builder (Forward Deployed Engineer)</h3>
+                  <p className="experience-company">Salesforce</p>
+                </div>
+                <span className="experience-date">Sep 2026 - Present</span>
+              </div>
+              <ul className="experience-desc">
+              </ul>
+            </div>
+          </div>
+          <div className="experience-item">
             <img className="experience-logo" src="/logos/capitalone.svg" alt="Capital One" />
             <div className="experience-body">
               <div className="experience-header">
